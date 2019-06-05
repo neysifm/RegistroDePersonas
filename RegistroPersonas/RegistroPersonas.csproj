@@ -80,6 +80,12 @@
     <Compile Include="UI\Consultas\ConsultaRegistroPersonas.Designer.cs">
       <DependentUpon>ConsultaRegistroPersonas.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Registros\RegistroPersonasF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\RegistroPersonasF.Designer.cs">
+      <DependentUpon>RegistroPersonasF.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,7 +113,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="UI\Registros\" />
     <Folder Include="UI\Reportes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
