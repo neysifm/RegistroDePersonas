@@ -11,18 +11,17 @@ namespace RegistroPersonas.Entidades
     {
         [Key]
         //ATRIBUTOS DE NUESTRA CLASE
-        public int IdPersona { get; set; }
-        public string Nombre { get; set; }
-        public string Cedula { get; set; }
+        public int PersonaId    { get; set; }
+        public string Nombre    { get; set; }
+        public string Cedula    { get; set; }
         public string Direccion { get; set; }
 
         //LiSTA TIPO TELEFONO-DETALLE
         public virtual List<TelefonoDetalle> Telefono { get; set; }
 
-        //Constructor Con parametros
-        public Personas(int idPersona, string nombre, string cedula, string direccion, List<TelefonoDetalle> telefono)
+        public Personas(int personaId, string nombre, string cedula, string direccion, List<TelefonoDetalle> telefono)
         {
-            IdPersona = idPersona;
+            PersonaId = personaId;
             Nombre = nombre;
             Cedula = cedula;
             Direccion = direccion;
@@ -31,7 +30,7 @@ namespace RegistroPersonas.Entidades
 
         public Personas()
         {
-            IdPersona = 0;
+            PersonaId = 0;
             Nombre = string.Empty;
             Cedula = string.Empty;
             Direccion = string.Empty;
